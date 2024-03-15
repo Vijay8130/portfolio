@@ -91,7 +91,7 @@ justify-content:center;
 /* Main content CSS */
 
 .main-container {
- height: 100vh;
+ height: 65vh;
 }
 
 
@@ -127,6 +127,12 @@ justify-content:center;
   display:flex;
 }
 
+.project-description{
+  margin-right: 60px;
+  margin-left:60px;
+  padding-top :80px;
+}
+
 .buttonelement{
   position:absolute;
   margin-left:12%;
@@ -153,9 +159,46 @@ justify-content:center;
 
 }
 
+/* Skill Content  */
 
+.skill-container{
+  display:flex;
+  flex-direction:column ;
+  background-color:#F2F7FF;
+  height:70vh;
+}
 
+.skill-icon:hover{
+  width:50%;
+  color:red;
+}
 
+/* Certificate Component */
+
+.certificate{
+  margin: 0 55px 55px 55px;  
+  height:90vh;
+  /* background-color: #ede1fe; */
+  background-image: url('https://cms.jibecdn.com/prod/cvent/assets/LP-SKU-D1-IMG-BG-en-us-1654520464862.jpg');
+  border-radius: 10px;
+  display: flex;
+
+  /* position: relative; */
+}
+
+.certificate-img{
+  height: 80%;
+  width: 70%;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.cert-png{
+  height: 100%;
+  width: 100%;
+}
  
 
 /* .project-img{
@@ -168,7 +211,7 @@ justify-content:center;
 .footer{
   display: flex;
   flex-direction: column;
-  height: 35vh;
+  height: 25vh;
   background-color: #1c2c43;
   color:white;
   align-items: center;
@@ -212,3 +255,6 @@ transition:all 0.4s ease-in-out;
 color:grey
 }
 
+a{
+  text-decoration: none;
+}

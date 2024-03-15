@@ -1,4 +1,4 @@
-export default function Main(props) {
+export default function Content(props) {
     return (
         <div className="main-container">
            <div className="projects">
@@ -10,6 +10,7 @@ export default function Main(props) {
                     />
                 </div>
                 <div className="description">
+                    <p className="project-description">{props.description}</p>
                     <button className="buttonelement">{props.link}</button>
                     <button className="buttonelement1">View Code</button>
                     
