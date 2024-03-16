@@ -2,13 +2,12 @@
 
 .navbar{
   width: 100%;
-  height: 60px;
+  height: 74px;
   background-color: black;
   color:white;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   
 }
-
 
 .navbar-container{
   height: 100%;
@@ -19,7 +18,7 @@
 
 .logo-container{
   display: flex;;
-  flex:2;
+  flex:4;
   font-family: "Sen",sans-serif;
   height: 100%;
   align-items:center;
@@ -88,6 +87,13 @@ justify-content:center;
   background-color: white;
   color:black
 }
+
+.about{
+width: 100%;
+height: 30vh;
+background-color: red;
+}
+
 /* Main content CSS */
 
 .main-container {
@@ -162,15 +168,22 @@ justify-content:center;
 /* Skill Content  */
 
 .skill-container{
-  display:flex;
-  flex-direction:column ;
   background-color:#F2F7FF;
-  height:70vh;
+  margin: 120px;
+  
 }
-
-.skill-icon:hover{
-  width:50%;
-  color:red;
+.skill-container-icon{
+  
+  display:grid;
+  grid-template: repeat(2, 300px)/ repeat(4, 1fr);
+  grid-gap:20px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+.skill-icon{
+margin:auto;
+/* padding: 10px; */
 }
 
 /* Certificate Component */
@@ -252,9 +265,74 @@ justify-content:center;
 .icons:hover{
 transform: scale(1.2);
 transition:all 0.4s ease-in-out;
-color:grey
+color:grey;
 }
 
 a{
   text-decoration: none;
+}
+
+.fa-react:hover{
+  color:#61DBFB;
+}
+
+/* About component */
+
+.about {
+  color: White;
+  background: linear-gradient(to right, rgba(0, 98, 185, 0.7), rgba(0, 98, 185, 0.7)), url(./svg/common-bg.svg);
+  height: 70vh;
+  position: relative;
+}
+
+.about-content {
+}
+
+.about-name{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-btn{
+  background: #fff;
+  color: #333;
+  letter-spacing: 2px;
+  font-weight: 700;
+  padding:10px 20px;
+  border-radius: 5px;
+  cursor:pointer;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  transform: translateY(5px);
+  border:none;
+}
+
+/* Contact component */
+.contact {
+  width: 100%;
+  height: 70vh;
+  background: linear-gradient(to right, rgba(0, 98, 185, 0.7), rgba(0, 98, 185, 0.7)), url(./svg/common-bg.svg);
+
+}
+
+.logo-container {
+  display: flex;;
+}
+
+.profile-img{
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid skyblue;
+  margin-right: 15px;
+}
+
+a{
+  display: flex;
+  text-align: center;
+  
+}
+
+a > h1{
+  align-self: center;
 }

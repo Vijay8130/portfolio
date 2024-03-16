@@ -2,10 +2,10 @@ import './App.css'
 import Navbar from './components/navbar'
 import Content from './components/content'
 import Footer from './components/footer'
-import About from './components/about'
 import Certification from './components/certification'
 import Skills from './components/skills'
-
+import About from './components/about'
+import Contact from './components/contact'
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 
 import data from './data'
@@ -41,13 +41,15 @@ function App() {
     <>
     <BrowserRouter>
          <Navbar /> 
+        
       
-      <Routes>
-        <Route path="/about" element={<About />} />
-        <Route path="/cert" element={<section> {cert}</section>}/>
-        <Route path="/projects" element={<section> {cards}</section>} />
-        <Route path="/skills" element={<Skills />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/cert" element={<section> {cert}</section>}/>
+          <Route path="/projects" element={<section> {cards}</section>} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/contact" element={<Contact />}/>
+        </Routes>
       
          {/* <section> {cards} 
          </section> */}

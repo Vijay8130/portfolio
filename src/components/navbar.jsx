@@ -7,15 +7,15 @@ export default function Navbar() {
             <div className="navbar">
                 <div className="navbar-container">
                     <div className="logo-container">
-                        <h1>Vijay logo</h1>
+                        <Link classNmae="logodis" to="/">
+                            <img className="profile-img" src="images/pic.jpg" alt="error" />
+                            <h1>Vijay Verma</h1>
+                        </Link>
                     </div>
                     <div className="menu-contianer">
                        <ul className="menu-list">
                          <Link to="/">
                             <li className="menu-list-items">Home</li>
-                        </Link>
-                        <Link to="/about">
-                            <li className="menu-list-items">About</li>
                         </Link>
                         <Link to="/projects">
                              <li className="menu-list-items">Project</li>
@@ -40,7 +40,9 @@ export default function Navbar() {
                         
                     </div>
                 </div>
+                
             </div>
+           
         </div>
     )
 }
