@@ -5,11 +5,11 @@ export default [
     },
     {
         id:2,
-        photo:"frontend.png",
+        photo:"dsa.png",
     },
     {
         id:3,
-        photo:"dsa.png",
+        photo:"frontend.png",
     },
     {
         id:4,
