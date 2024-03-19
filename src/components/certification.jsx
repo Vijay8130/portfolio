@@ -1,6 +1,8 @@
 
 export default function Certification(props) {
     return (
+        <>
+        {props.certificate &&
         <div className="certificate">
             <div className="certificate-img">
                 <img  
@@ -9,5 +11,6 @@ export default function Certification(props) {
                     alt="Error in Uploading Image..." />
             </div>
         </div>
+ } </>
     )
 }

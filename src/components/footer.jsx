@@ -1,9 +1,15 @@
+import { Link } from "react-router-dom"
+
 export default function Footer() {
     return (
         
         <div className="footer">
             <div className="footer-contact">
-                <button>Contact me</button>
+               <Link to="/contact">
+                <button className="contact-btn"> Contact me</button>
+               </Link>
+            
+                
             </div>
             <div className="footer-icons">
                 <a href="https://github.com/Vijay8130" target="_blank">

@@ -1,11 +1,13 @@
-export default function Content(props) {
+export default function Project(props) {
     return (
+<div>
+{props.description &&
         <div className="main-container">
            <div className="projects">
                     <div className="project-image-container">
                     <img 
                      className="project-img" 
-                     src={`images/${props.coverImg}`} // don't use ./ if we are calling images from public directory
+                     src={`images/${props.coverImg}`} // don't use "./" if we are calling images from public directory
                      alt="" 
                     />
                 </div>
@@ -17,6 +19,7 @@ export default function Content(props) {
                 </div>
             </div>
         </div>
-
+}
+ </div>
     )
 } 

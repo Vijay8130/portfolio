@@ -7,7 +7,7 @@ export default function Navbar() {
             <div className="navbar">
                 <div className="navbar-container">
                     <div className="logo-container">
-                        <Link classNmae="logodis" to="/">
+                        <Link className="logodis" to="/">
                             <img className="profile-img" src="images/pic.jpg" alt="error" />
                             <h1>Vijay Verma</h1>
                         </Link>
@@ -20,7 +20,7 @@ export default function Navbar() {
                         <Link to="/projects">
                              <li className="menu-list-items">Project</li>
                         </Link>
-                        <Link to="/cert">
+                        <Link to="/certificate">
                             <li className="menu-list-items">Certification</li>
                         </Link>
                         <Link to="/skills">
@@ -28,6 +28,9 @@ export default function Navbar() {
                         </Link>
                         <Link to="/contact">
                             <li className="menu-list-items">Contact</li>
+                        </Link>
+                        <Link to="/tri">
+                        <li className="menu-list-items">Trails</li>
                         </Link>
                        </ul>
                     </div>
