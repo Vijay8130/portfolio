@@ -46,17 +46,14 @@ const tri = data.map(item => {
     <>
     <BrowserRouter>
          <Navbar /> 
-        <Routes>
-          <Route path="/" element={<About />} />
-          <Route path="/certificate" element={<section> {certificate}</section>}/>
-          <Route path="/projects" element={<section> {project}</section>} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/contact" element={<Contact />}/>
-          <Route path="/tri" element={tri} />
-        </Routes>
-      
-         {/* <section> {cards} 
-         </section> */}
+              <Routes>
+                <Route path="/" element={<About />} />
+                <Route path="/certificate" element={<section> {certificate}</section>}/>
+                <Route path="/projects" element={<section> {project}</section>} />
+                <Route path="/skills" element={<Skills />} />
+                <Route path="/contact" element={<Contact />}/>
+                <Route path="/tri" element={tri} />
+              </Routes>
          <Footer />
     </BrowserRouter>
     </>
