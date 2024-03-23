@@ -1,10 +1,15 @@
 import { Link } from "react-router-dom"
 
 
-export default function Navbar() {
+export default function Navbar(props) {
     return (
-        <div>
-            <div className="navbar">
+        
+           <nav
+                       className={props.darkMode ? "light": ""}
+                 >
+            <div 
+            className="navbar"
+            >
                 <div className="navbar-container">
                     <div className="logo-container">
                         <Link className="logodis" to="/">
@@ -35,7 +40,8 @@ export default function Navbar() {
                        </ul>
                     </div>
                     <div className="profile-container">
-                        <div className="toggle">
+                        <div className="toggle"
+                        onClick={props.toggleDarkMode}>
                             <i class="fa-solid fa-moon toggle-icon"></i>
                             <i class="fa-solid fa-sun toggle-icon"></i>
                             <div className="toggle-ball"></div>
@@ -45,7 +51,7 @@ export default function Navbar() {
                 </div>
                 
             </div>
-           
-        </div>
+            </nav>
+        
     )
 }

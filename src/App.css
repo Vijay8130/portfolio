@@ -4,9 +4,7 @@
   width: 100%;
   height: 10vh;
   background-color: black;
-  color:white;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  
 }
 
 .navbar-container{
@@ -14,6 +12,38 @@
   display:flex;
   align-items: center;
   padding: 0 50px;
+}
+
+.logodis{
+  color:white;
+}
+nav.light .logodis{
+  color:black;
+}
+
+/* Toggle Button  mode */
+nav.light  .navbar {
+  background-color: whitesmoke;
+}
+
+li{
+  font-size: 1.2rem;
+  font-weight: 700;
+  color:whitesmoke;
+}
+
+nav.light li{
+  color:Black;
+}
+
+
+nav.light li:hover{
+  color:#F06529;
+}
+
+
+li:hover{
+  color:#F06529
 }
 
 .logo-container{
@@ -50,15 +80,25 @@ justify-content:center;
 }
 
 /* Toggle button for dark mode */
+
 .toggle{
   width: 40px;
   height: 20px;
-  background-color: white;
+  background-color: whitesmoke;
   border-radius:30px;
   display: flex;
   align-items:center;
   justify-content: space-around;
   position: relative;
+  cursor:pointer;
+}
+nav.light .toggle-ball{
+  transform: translateX(0px);
+  transition:all 0.3s ease-in-out;
+}
+
+nav.light .toggle{
+  background-color: black;
 }
 
 .toggle-icon{
@@ -68,25 +108,20 @@ justify-content:center;
 .toggle-ball{
   width: 18px;
   height: 18px;
-  background-color: black;
+  background-color: goldenrod;
   position: absolute;
   border-radius: 50%;
   right: 1px;
   cursor:pointer;
+  transform: translateX(-20px);
+  transition:all 0.3s ease-in-out;
 }
 
-.toggle-ball:hover{
-  transform: translateX(-20px);
-  transition:all 1s ease-in-out;
-}
 
 
 /* toggle switch on click */
 
-.navbar.avtive{
-  background-color: white;
-  color:black
-}
+
 
 .about{
 width: 100%;
@@ -216,11 +251,7 @@ margin:auto;
 }
  
 
-/* .project-img{
-  width: 100%;
-  height: 80%;
-  background-color: green;
-} */
+
 
 /* Footer Css */
 .footer{
@@ -228,7 +259,6 @@ margin:auto;
   flex-direction: column;
   height: 25vh;
   background-color: #1c2c43;
-  color:white;
   align-items: center;
 }
 .footer-contact {
@@ -238,7 +268,7 @@ margin:auto;
 
 .contact-btn{
   padding: 10px 30px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     border: 4px solid white;
     border-radius: 10px;
@@ -247,9 +277,10 @@ margin:auto;
     cursor: pointer;
 }
 
-.footer-contact > button:hover{
+.contact-btn:hover{
   background-color: white;
   color: black;
+  transform: scale(1.1);
   transition:all 0.5s ease-in-out;
 
 }
@@ -273,12 +304,17 @@ color:grey;
 
 a{
   text-decoration: none;
+  color:black;
 }
+
 
 .fa-react:hover{
   color:#61DBFB;
 }
 
+.fa-moon{
+  color:grey;
+}
 /* About component */
 
 .about {
@@ -355,18 +391,27 @@ a{
 
 
 .logo-container {
-  display: flex;;
+  display: flex;
 }
 
 .profile-img{
-  width: 10vh;
-  height: 10vh;
+  width: 8vh;
+  height: 8vh;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid skyblue;
+  border: 4px solid rgb(223, 80, 80);
   margin-right: 15px;
 }
 
+
+nav.light .profile-img{
+  border:4px solid rgb(65, 114, 186);
+}
+.profile-img:hover{
+  border: 4px solid rgb(65, 114, 186);
+  transform: scale(1.2);
+  transition: transform 0.4s ease;
+}
 a{
   display: flex;
   text-align: center;
@@ -485,4 +530,10 @@ background-image: linear-gradient(to right,#E34C26 50%, #F06529 50%);
 .tri{
   width:10vw;
   height: auto;
+}
+
+
+
+a{
+  color:Black;
 }

@@ -4,6 +4,7 @@ export default function Footer() {
     return (
         
         <div className="footer">
+
             <div className="footer-contact">
                <Link to="/contact">
                 <button className="contact-btn"> Contact me</button>

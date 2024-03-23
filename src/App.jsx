@@ -1,4 +1,6 @@
 import './App.css'
+import React from "react"
+
 import Navbar from './components/navbar'
 import Project from './components/project'
 import Footer from './components/footer'
@@ -11,6 +13,13 @@ import data from './data'
 import Tri from './components/Tri'
 
 function App() {
+  const [darkMode, setDarkMode] = React.useState(false)
+
+  function toggleDarkMode() {
+       setDarkMode(prevMode => !prevMode)
+       console.log("i was clicked")
+  }
+
   const certificate = data.map(item => {
     return (
       <Certification 
@@ -41,11 +50,14 @@ const tri = data.map(item => {
       
   )
 })
+
        
   return (
     <>
     <BrowserRouter>
-         <Navbar /> 
+         <Navbar 
+         darkMode={darkMode} 
+         toggleDarkMode={toggleDarkMode}/> 
               <Routes>
                 <Route path="/" element={<About />} />
                 <Route path="/certificate" element={<section> {certificate}</section>}/>
@@ -54,7 +66,7 @@ const tri = data.map(item => {
                 <Route path="/contact" element={<Contact />}/>
                 <Route path="/tri" element={tri} />
               </Routes>
-         <Footer />
+         <Footer darkMode={darkMode}/>
     </BrowserRouter>
     </>
   )
