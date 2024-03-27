@@ -34,9 +34,6 @@ export default function Navbar(props) {
                         <Link to="/contact">
                             <li className="menu-list-items">Contact</li>
                         </Link>
-                        <Link to="/tri">
-                        <li className="menu-list-items">Trails</li>
-                        </Link>
                        </ul>
                     </div>
                     <div className="profile-container">

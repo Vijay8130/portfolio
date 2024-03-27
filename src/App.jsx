@@ -10,7 +10,6 @@ import About from './components/about'
 import Contact from './components/contact'
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import data from './data'
-import Tri from './components/Tri'
 
 function App() {
   const [darkMode, setDarkMode] = React.useState(false)
@@ -40,16 +39,7 @@ function App() {
     )
 })        
 
-const tri = data.map(item => {
-  return (
-      <Tri
-          key={item.id}
-          {...item}
-          
-      />
-      
-  )
-})
+
 
        
   return (
@@ -64,7 +54,6 @@ const tri = data.map(item => {
                 <Route path="/projects" element={<section> {project}</section>} />
                 <Route path="/skills" element={<Skills />} />
                 <Route path="/contact" element={<Contact />}/>
-                <Route path="/tri" element={tri} />
               </Routes>
          <Footer darkMode={darkMode}/>
     </BrowserRouter>

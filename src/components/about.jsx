@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 
 export default function About() {
     return (
+      
     <div className="about">
       <div className="about-content">
       <h1 className="about-name">HEY, MY NAME IS VIJAY VERMA</h1>

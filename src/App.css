@@ -131,72 +131,111 @@ height: 30vh;
 /* Main content CSS */
 
 .main-container {
- height: 65vh;
+ height: auto;
+ margin: 5% 5% 15% 5%;
+}
+
+.main-container:hover{
+  /* transform: */
+  transition:all 0.8s ease-in-out;
 }
 
 
 .projects{
   width:90%;
-  height: 500px;
-  background-color: red;
+  height: auto;
   border-radius: 20px;
   margin:40px auto;
   display: flex;
   box-shadow: 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16);
+  margin-bottom: 5%;
 }
+
+
+
+.projects:hover {
+  transform: scale(1.1);
+  transition:all 1s ease-in-out;
+}
+
 
 .project-image-container{
   width: 40%;
-  height: 90%;
-  background-color: yellow;
+  background-color: #DFD3BB;
   margin:auto;
+  padding:3%;
+  border-radius: 8px;
 }
+
+
 
 .project-img{
   width: 100%;
   height: 100%;
   object-fit:fill;
+  border-radius: 12px;
+}
+
+.project-img:hover{
+  transform: scale(1.1);
+  transition:all 0.8s ease-in-out;
 }
 
 .description{
-  width: 40%;
-  height: 90%;
-  background-color: green;
-  margin:auto;
-  position:relative;
   display:flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  height: auto;
+  margin:auto;
+  
 }
 
 .project-description{
-  margin-right: 60px;
-  margin-left:60px;
-  padding-top :80px;
+  color: #EE4566;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 1.2rem;
+  line-height:1.5rem;
+}
+
+.project-heading{
+padding:0 0 5% 0;
+justify-self: flex-start;
+}
+
+.project-btn{
+  margin-top: 5%;
+  display: flex;
 }
 
 .buttonelement{
-  position:absolute;
-  margin-left:12%;
-  margin-top: 330px;
+  margin-right: 70px;
   padding:10px 25px;
-  border-radius: 8px;
-  font-size: 1.2rem;
+  border-radius: 5px;
+  font-size: 1rem;
   font-weight: bold;
-  border: 3px solid pink;
+  background-color: #0062B9;
+  color:white;
+  letter-spacing: 2px;
+  border:none;
   cursor:pointer;
 }
 
+.buttonelement:hover, .buttonelement1:hover{
+  transform: translateY(-5px);
+  transition:all 0.3s ease-in-out;
+}
+
 .buttonelement1{
-  position:absolute;
-  margin-left:60%;
-  margin-top: 330px;
   padding:10px 25px;
-  border-radius:8px;
-  font-size: 1.2rem;
+  border: 2px solid rgba(0, 98, 185, 0.8);
+  background-color: #fff;
+  border-radius:5px;
+  font-size: 1rem;
+  letter-spacing: 2px;
   font-weight: bold;
-  border:3px solid pink;
   cursor:pointer;
-
-
 }
 
 /* Skill Content  */
@@ -225,29 +264,29 @@ margin:auto;
 /* Certificate Component */
 
 .certificate{
-  margin: 0 55px 55px 55px;  
-  height:70vh;
-  /* background-color: #ede1fe; */
+  margin:55px auto;  
+  width: 75%;
+  height:90vh;
   background-image: url('https://cms.jibecdn.com/prod/cvent/assets/LP-SKU-D1-IMG-BG-en-us-1654520464862.jpg');
   border-radius: 10px;
   display: flex;
-
-  /* position: relative; */
 }
 
 .certificate-img{
   height: 80%;
   width: auto;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
+  margin: auto;
+
 }
 
 .cert-png{
-  height: 70%;
+  height: 100%;
   width: auto;
-  max-width: 600px;
+  align-self: center;
+}
+.cert-png:hover{
+  transform: scale(1.2);
+  transition:all 0.8s ease-in-out;
 }
  
 
@@ -429,26 +468,21 @@ display: none;
 }
 
 .cert-png{
-  height: 40%;
-  width: auto;
+  width: 100%;
+  height: auto;
+  padding:4%;
+  
 }
 
 .certificate{
   margin: 30px 25px 55px 25px;
 }
 
-.projects{
-  
-}
+
 .description {
   display: none;
 }
 
-.project-image-container{
-  width:90%;
-  height:auto;
-  margin: 20px auto auto auto;
-}
 
 .skill-container-icon{
   grid-template: repeat(3, 25vh)/ repeat(3, 1fr);
@@ -462,6 +496,10 @@ display: none;
  .skill-container-icon{
   grid-template: repeat(4, 5vh)/ repeat(2, 1fr);
   grid-gap:9vh;
+}
+
+.certificate{
+  height:auto;
 }
 
 .skill-container{
@@ -537,3 +575,8 @@ background-image: linear-gradient(to right,#E34C26 50%, #F06529 50%);
 a{
   color:Black;
 }
+
+footer.light .footer{
+  background-color:#a0a2a6;
+}
+

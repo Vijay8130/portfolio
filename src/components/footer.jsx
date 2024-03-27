@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
 
-export default function Footer() {
+export default function Footer(props) {
     return (
-        
+        <footer className={props.darkMode ? "light": ""}>
         <div className="footer">
 
             <div className="footer-contact">
@@ -31,6 +31,7 @@ export default function Footer() {
             </div>
 
         </div>
+        </footer>
         
 
     
