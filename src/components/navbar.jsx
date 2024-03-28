@@ -14,16 +14,16 @@ export default function Navbar(props) {
                     <div className="logo-container">
                         <Link className="logodis" to="/">
                             <img className="profile-img" src="images/pic.jpg" alt="error" />
-                            <h1>Vijay Verma</h1>
+                            <h1 className="profile-name">Vijay</h1>
                         </Link>
                     </div>
                     <div className="menu-contianer">
                        <ul className="menu-list">
                          <Link to="/">
-                            <li className="menu-list-items">Home</li>
+                            <li className="menu-list-items homepage">Home</li>
                         </Link>
                         <Link to="/projects">
-                             <li className="menu-list-items">Project</li>
+                             <li className="menu-list-items project">Project</li>
                         </Link>
                         <Link to="/certificate">
                             <li className="menu-list-items">Certification</li>
@@ -32,7 +32,7 @@ export default function Navbar(props) {
                             <li className="menu-list-items">Skills</li>
                         </Link>
                         <Link to="/contact">
-                            <li className="menu-list-items">Contact</li>
+                            <li className="menu-list-items contactdetail">Contact</li>
                         </Link>
                        </ul>
                     </div>
@@ -43,9 +43,10 @@ export default function Navbar(props) {
                             <i class="fa-solid fa-sun toggle-icon"></i>
                             <div className="toggle-ball"></div>
                         </div>
+                </div>
+                        <div className="hamburger">vjv</div>
                         
                     </div>
-                </div>
                 
             </div>
             </nav>

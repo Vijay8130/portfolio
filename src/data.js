@@ -54,19 +54,23 @@ export default [
         id:6,
         certificate:1,
         photo:"responsive.png",
+        certificateurl:"https://www.freecodecamp.org/certification/VIJAYVERMA/responsive-web-design",
     },
     {   id:7,
         certificate:2,
         photo:"dsa.png",
+        certificateurl:"https://www.freecodecamp.org/certification/VIJAYVERMA/javascript-algorithms-and-data-structures",
     },
     {   id:8,
         certificate:3,
         photo:"frontend.png",
+        certificateurl:"https://www.freecodecamp.org/certification/VIJAYVERMA/front-end-development-libraries",
     },
     {
         id:9,
         certificate:4,
         photo:"javascript.png",
+        certificateurl:"https://scrimba.com/certificate/u4xKQbt9/gjavascript",
     },
    
 ]

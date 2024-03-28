@@ -117,12 +117,7 @@ nav.light .toggle{
   transition:all 0.3s ease-in-out;
 }
 
-
-
 /* toggle switch on click */
-
-
-
 .about{
 width: 100%;
 height: 30vh;
@@ -171,8 +166,8 @@ height: 30vh;
 
 .project-img{
   width: 100%;
-  height: 100%;
-  object-fit:fill;
+  /* height: 100%; */
+  /* object-fit:fill; */
   border-radius: 12px;
 }
 
@@ -264,33 +259,29 @@ margin:auto;
 /* Certificate Component */
 
 .certificate{
-  margin:55px auto;  
-  width: 75%;
-  height:90vh;
+  width:85%;
+  height:auto;
+  padding: 5% 0 5% 0;
+  margin: 0 auto 10% auto;
   background-image: url('https://cms.jibecdn.com/prod/cvent/assets/LP-SKU-D1-IMG-BG-en-us-1654520464862.jpg');
   border-radius: 10px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.certificate-img{
-  height: 80%;
-  width: auto;
-  margin: auto;
-
+.cert-img{
+width: 72%;
+height: auto;
+object-fit: contain;
+margin:auto;
 }
 
-.cert-png{
-  height: 100%;
-  width: auto;
-  align-self: center;
-}
-.cert-png:hover{
+.cert-img:hover{
   transform: scale(1.2);
   transition:all 0.8s ease-in-out;
-}
+} 
  
-
-
 
 /* Footer Css */
 .footer{
@@ -346,7 +337,6 @@ a{
   color:black;
 }
 
-
 .fa-react:hover{
   color:#61DBFB;
 }
@@ -371,12 +361,9 @@ a{
   text-align:center;
 }
 
-
-
 .about-name{
   font-size: clamp(0.5rem, 1rem + 3.67vw, 3.5rem);
   letter-spacing: 4px;
-  
 }
 
 .about-paragraph{
@@ -384,7 +371,6 @@ a{
   line-height: 1.8;
   padding-bottom:15vh;
   padding-top:4vh;
-
 }
 
 .about-btn{
@@ -403,9 +389,7 @@ a{
   transform: translateY(-5px);
   transition:all 0.5s ease-in-out;
   scale:1.1
-
 }
-
 /* Contact component */
 .contact {
   width: 100%;
@@ -427,7 +411,6 @@ a{
   padding-top:4vh;
 
 }
-
 
 .logo-container {
   display: flex;
@@ -462,9 +445,19 @@ a > h1{
 }
 
 
+
 @media  (width < 800px){
-.menu-contianer{
-display: none;
+
+
+.profile-name{
+  display:none;
+}
+
+.homepage{
+  display:none;
+}
+.contactdetail{
+  display:none;
 }
 
 .cert-png{
@@ -498,6 +491,40 @@ display: none;
   grid-template: repeat(6, 5vh)/ repeat(2, 1fr);
   grid-gap:10vh 8vh; 
 }
+.profile-container{
+  transform: scale(0.7);
+}
+.menu-list{
+  padding-left: 20px;
+}
+
+.navbar-container{
+  justify-content: center;
+}
+.menu-contianer{
+  flex:9;
+}
+.menu-list-items{
+  margin-right: 10px;
+}
+.logo-container{
+  transform: scale(0.9);
+  flex:2;
+  padding-left: 15px;
+  /* display: none; */
+}
+.project{
+  display: block;
+}
+
+
+.menu-list-items{
+  font-size: 1rem;
+}
+
+.navbar-container{
+  padding:0%;
+}
 
 .certificate{
   height:auto;
@@ -527,12 +554,11 @@ display: none;
 
 }
 
-.fa-html5 {
-/* color: #F06529; */
-color: transparent; 
-background-clip: text;
+.fa-html5 { 
+ color: #F06529; 
+/color: transparent; 
+background-clip: text; 
 background-image: linear-gradient(to right,#E34C26 50%, #F06529 50%);
-
 }
 
 .fa-react{
@@ -549,7 +575,7 @@ background-image: linear-gradient(to right,#E34C26 50%, #F06529 50%);
 .fa-css3-alt{
   color:transparent;
   background-clip:text;
-  background-image:linear-gradient(to right,#264de4 50%, #2965f1 50%);
+   background-image:linear-gradient(to right,#264de4 50%, #2965f1 50%);
 }
 
 .fa-file-excel{
@@ -561,23 +587,17 @@ background-image: linear-gradient(to right,#E34C26 50%, #F06529 50%);
   font-size:12vh;
 }
 
-.skill.icon:hover{
-  scale:(1.2);
-}
-
-
-.tri{
-  width:10vw;
-  height: auto;
-}
-
-
-
 a{
   color:Black;
 }
 
 footer.light .footer{
   background-color:#a0a2a6;
+}
+
+
+.hamburger{
+  color:white;
+  display:none;
 }
 
