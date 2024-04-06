@@ -120,7 +120,8 @@ nav.light .toggle{
 /* toggle switch on click */
 .about{
 width: 100%;
-height: 30vh;
+overflow: scroll;
+
 }
 
 /* Main content CSS */
@@ -384,6 +385,10 @@ a{
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   border:none;
   margin:0 auto;
+}
+
+.btn-container{
+  margin-bottom: 10vh;
 }
 .about-btn:hover{
   transform: translateY(-5px);

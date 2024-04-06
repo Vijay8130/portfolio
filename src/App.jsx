@@ -16,7 +16,6 @@ function App() {
 
   function toggleDarkMode() {
        setDarkMode(prevMode => !prevMode)
-       console.log("i was clicked")
   }
 
   const certificate = data.map(item => {
